@@ -15,10 +15,20 @@ typensearch {
     border-right: none;
     font-size: 12px;
     padding: 5px;
+    transition: 0.5s border;
+}
+.tns input[type="text"]:hover {
+    border: 1px solid #ABABAB;
+    border-right: none;
 }
 .tns input[type="text"]:focus {
+    border: 1px solid #4BA3D2;
+    border-right: none;
     outline: none;
 }
+
+
+
 
 /* 
  *  Action/Submit button
@@ -35,10 +45,12 @@ typensearch {
     font-size: 12px;
     padding: 6px;
 }
-
 .tns button:focus {
     outline: none;
 }
+
+
+
 
 /* 
  *  Suggestions Dropdown
@@ -59,30 +71,28 @@ typensearch {
     width: 100%;
     z-index: 2;
 }
-
-
 .tns-suggestions.has-suggestions {
     opacity: 1;
     visibility: visible;
 }
-
 .tns-suggestions ul {
     border: 1px solid #CCCCCC;
     border-bottom: none;
     margin: 0;
     padding: 0;
 }
-
 .tns-suggestions ul,
 .tns-suggestions ul li {
     list-style: none;
 }
-
 .tns-suggestions ul li {
     border-bottom: 1px solid #CCCCCC;
     font-size: 12px;
     padding: 5px;
 }
+
+
+
 
 /* 
  *  Selectable Suggestions Dropdown
@@ -94,7 +104,6 @@ typensearch {
 .tns-suggestions.is-selectable ul li {
     cursor: pointer;
 }
-
 .tns-suggestions.is-selectable ul li:hover,
 .tns-suggestions.is-selectable ul li.hover {
     background: #4BA3D2;
